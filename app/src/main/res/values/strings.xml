@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MoodScape</string>
+    <string name="welcome_message">Welcome back! How are you feeling today? 🌟</string>
+    <string name="login_title">Welcome Back 👋</string>
+    <string name="signup_title">Join MoodScape 🌈</string>
+    <string name="track_mood">Track Your Mood</string>
+    <string name="self_assessment">Self Assessment</string>
+    <string name="visual_insights">Visual Insights</string>
+    <string name="mood_score">Mood Score</string>
+    <string name="diary">Diary</string>
+    <string name="chatbot">Chat</string>
+    <string name="home">Home</string>
+    <string name="activities">Activities</string>
+    <string name="profile">Profile</string>
+</resources>

@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="48">
+    <!-- Solid Home Icon - Elevated for the curved bump -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,4L2,13h3v9h6v-6h2v6h6v-9h3L12,4z" />
+</vector>

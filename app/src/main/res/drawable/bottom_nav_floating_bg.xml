@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="80dp"
+    android:viewportWidth="360"
+    android:viewportHeight="80">
+    <!-- Floating Pill with Center Bézier Curve -->
+    <path
+        android:fillColor="@color/bottom_nav_background"
+        android:pathData="M30,20
+        H135
+        C155,20 160,0 180,0
+        C200,0 205,20 225,20
+        H330
+        A25,25 0 0 1 355,45
+        V55
+        A25,25 0 0 1 330,80
+        H30
+        A25,25 0 0 1 5,55
+        V45
+        A25,25 0 0 1 30,20 Z" />
+</vector>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Self Assessment" android:textSize="24sp" android:textStyle="bold"
+                android:textColor="@color/primary"/>
+            <Button android:id="@+id/btnMoodHistory"
+                android:layout_width="wrap_content" android:layout_height="36dp"
+                android:text="History" android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/accent" style="@style/Widget.MaterialComponents.Button"/>
+        </RelativeLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="HOW IS YOUR MOOD NOW? 🤔"
+            android:textSize="16sp" android:textColor="@color/text_secondary"
+            android:layout_marginTop="4dp" android:layout_marginBottom="20dp"/>
+
+        <!-- Mood Dropdown -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="1. Current Mood" android:textStyle="bold" android:textSize="15sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+        <Spinner android:id="@+id/spinnerMood" android:layout_width="match_parent"
+            android:layout_height="52dp" android:background="@drawable/spinner_bg"/>
+
+        <!-- Intensity -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="2. Intensity Level" android:textStyle="bold" android:textSize="15sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="20dp" android:layout_marginBottom="8dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Low     Medium     High" android:textSize="13sp"
+                android:textColor="@color/text_secondary" android:gravity="center"/>
+            <SeekBar android:id="@+id/seekIntensity" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:max="2"
+                android:progressTint="@color/primary" android:thumbTint="@color/primary"/>
+            <TextView android:id="@+id/tvIntensityLabel" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+                android:textSize="16sp" android:textStyle="bold" android:textColor="@color/primary"/>
+        </LinearLayout>
+
+        <!-- Trigger Point -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="3. Trigger Point" android:textStyle="bold" android:textSize="15sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="20dp" android:layout_marginBottom="8dp"/>
+        <Spinner android:id="@+id/spinnerTrigger" android:layout_width="match_parent"
+            android:layout_height="52dp" android:background="@drawable/spinner_bg"/>
+
+        <!-- Reason -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="4. Reason (Optional)" android:textStyle="bold" android:textSize="15sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="20dp" android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etReason" android:layout_width="match_parent"
+            android:layout_height="100dp" android:hint="What's on your mind?"
+            android:gravity="top" android:padding="12dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/edittext_bg" android:inputType="textMultiLine"/>
+
+        <Button android:id="@+id/btnSubmit" android:layout_width="match_parent"
+            android:layout_height="52dp" android:text="SUBMIT ASSESSMENT ✓"
+            android:layout_marginTop="24dp" android:backgroundTint="@color/primary"
+            style="@style/Widget.MaterialComponents.Button"/>
+    </LinearLayout>
+</ScrollView>
