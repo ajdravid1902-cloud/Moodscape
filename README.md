@@ -77,7 +77,7 @@ SQLite — users | mood_history | diary
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/josephdravid/moodscape.git
+git clone https://github.com/ajdravid1902-cloud/Moodscape.git
 ```
 
 1. Open the project in Android Studio (Hedgehog or newer)
